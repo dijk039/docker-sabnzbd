@@ -1,4 +1,4 @@
-FROM alpine:3.4.6
+FROM alpine:3.1
 MAINTAINER Tim van Dijk
 ARG GITTAG=1.2.0
 ARG PAR2TAG=v0.6.14 
