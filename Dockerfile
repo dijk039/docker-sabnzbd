@@ -8,6 +8,7 @@ RUN buildDeps="gcc g++ git mercurial make automake autoconf python-dev openssl-d
   && apk add \
     python \
     py-pip \
+    py2-pip \
     ffmpeg-libs \
     ffmpeg \
     unrar \
