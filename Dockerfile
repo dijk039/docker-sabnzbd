@@ -15,7 +15,7 @@ RUN buildDeps="gcc g++ git mercurial make automake autoconf python-dev openssl-d
     ca-certificates \
     p7zip \
 && pip install --upgrade pip --no-cache-dir \
-&& pip install pyopenssl cheetah --no-cache-dir \
+&& pip install cheetah --no-cache-dir \
 && git clone --depth 1 --branch ${PAR2TAG} https://github.com/Parchive/par2cmdline.git \
 && cd /par2cmdline \
 && aclocal \
