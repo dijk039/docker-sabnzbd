@@ -1,4 +1,4 @@
-FROM alpine:3.5
+FROM alpine:latest
 MAINTAINER Tim van Dijk
 ARG GITTAG=1.2.0
 ARG PAR2TAG=v0.6.14 
@@ -7,8 +7,7 @@ RUN buildDeps="gcc g++ git mercurial make automake autoconf python-dev openssl-d
   && apk --update add $buildDeps \
   && apk add \
     python \
-    py-pip \
-    py2-pip \
+    py2-pip py2-openssl \
     ffmpeg-libs \
     ffmpeg \
     unrar \
